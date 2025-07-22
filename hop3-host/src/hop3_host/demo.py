@@ -8,7 +8,7 @@ def main():
     print(f"Total plugins: {len(plugins)}")
     for plugin in plugins:
         print(
-            f"- {plugin.name} ({plugin.__class__.__module__}.{plugin.__class__.__name__})"
+            f"- {plugin.name} ({plugin})"
         )
 
 

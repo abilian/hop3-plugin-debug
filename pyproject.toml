@@ -20,6 +20,7 @@ hop3-plugin = { workspace = true }
 
 [dependency-groups]
 dev = [
+    "devtools>=0.12.2",
     "ruff>=0.12.4",
     "uv-build>=0.8.0",
 ]
