@@ -1,0 +1,25 @@
+[project]
+name = "hop3-plugin-debug"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "pluggy>=1.6.0",
+    "hop3-plugin",
+    "hop3-host",
+]
+
+[tool.uv.workspace]
+members = [
+    "hop3-host",
+    "hop3-plugin",
+]
+
+[tool.uv.sources]
+hop3-host = { workspace = true }
+hop3-plugin = { workspace = true }
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.4",
+    "uv-build>=0.8.0",
+]
